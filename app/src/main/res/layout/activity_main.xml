@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <EditText
+      android:id="@+id/eventID"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Event ID"
+      android:ems="10"
+      android:inputType="number"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Name"
+        android:id="@+id/eventName"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@+id/eventID"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Date"
+        android:id="@+id/eventDate"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_below="@+id/eventName"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Location"
+        android:id="@+id/eventLocation"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@+id/eventDate"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Description"
+        android:id="@+id/eventDescription"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@+id/eventLocation"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Event"
+        android:id="@+id/addEvent"
+        android:layout_below="@+id/eventDescription"
+        android:layout_alignParentStart="true" />
+
+  <Button
+        android:id="@+id/showEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Event"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/addEvent" />
+
+</RelativeLayout>
